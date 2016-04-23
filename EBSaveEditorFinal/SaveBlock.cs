@@ -71,9 +71,9 @@ namespace EBSaveEditorFinal
             }
 
             favThing = "";
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 7; i++)
             {
-                ch = buffer[i + 0x50];
+                ch = buffer[i + 0x54];
                 if (ch > 0)
                     favThing += EBMethods.GetChar(ch);
             }
@@ -129,7 +129,7 @@ namespace EBSaveEditorFinal
             EBMethods.PutString(playerName, ref buffer, 24, 0x2c);
             EBMethods.PutString(petName, ref buffer, 6, 0x44);
             EBMethods.PutString(favFood, ref buffer, 6, 0x4a);
-            EBMethods.PutString(favThing, ref buffer, 10, 0x50);
+            EBMethods.PutString(favThing, ref buffer, 7, 0x54);
 
             buffer[0x5c] = (byte)(moneyHand & 0xff);
             buffer[0x5d] = (byte)((moneyHand & 0xff00) >> 8);
