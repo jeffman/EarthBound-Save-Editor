@@ -1,0 +1,7 @@
+$0002:A temporary flag used for various purposes.
+$000B:Turns off enemy encounters
+$0040:Set after defeating Frank
+$0203:Set after defeating Frankystein Mark II
+$02ED:Toggles Ness's jammies
+$0320:Gift box on the hill in Onett
+$0321:Trash can next to burger shop in Onett (On = opened)
